@@ -87,7 +87,7 @@ To run the application locally, use the following command:
 ```bash
 npm run dev
 ```
-This will start the application on http://localhost:3000.
+This will start the application on http://localhost:5173.
 ## Usage
 
 Once the application is running, you can:
