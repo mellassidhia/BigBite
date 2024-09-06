@@ -46,7 +46,9 @@ Welcome to **BigBite**, a full-stack web application for online food ordering bu
 
 ## Installation
 
-Before running the application, you need to install the required dependencies. Follow these steps:
+Before running the application, you need to install the required dependencies for both the frontend and backend. Follow these steps:
+
+### Frontend Setup
 
 1. Clone the repository:
 
@@ -60,9 +62,10 @@ Before running the application, you need to install the required dependencies. F
     cd BigBite
     ```
 
-3. Install Vite and create a new project:
+3. Install Vite in frontend folder:
 
     ```bash
+    cd frontend
     npm create vite@latest
     ```
 
@@ -74,7 +77,55 @@ Before running the application, you need to install the required dependencies. F
     cd <your-project-name>
     ```
 
-6. Install the necessary dependencies:
+6. Install the necessary frontend dependencies:
+
+    ```bash
+    npm install
+    ```
+
+### Backend Setup
+
+1. Navigate to the backend directory:
+
+    ```bash
+    cd backend
+    ```
+
+2. Install the necessary backend dependencies:
+
+    ```bash
+    npm install express mongoose jsonwebtoken bcrypt cors dotenv body-parser multer stripe validator
+    ```
+
+3. Install development dependencies:
+
+    ```bash
+    npm install nodemon --save-dev
+    ```
+
+### Admin Setup
+
+1. Navigate to the admin folder:
+
+    ```bash
+    cd admin
+    ```
+
+2. Install Vite and create a new project (similar to frontend setup):
+
+    ```bash
+    npm create vite@latest
+    ```
+
+3. Follow the prompts to set up the project with React.
+
+4. Navigate into the newly created project directory (if necessary):
+
+    ```bash
+    cd <your-project-name>
+    ```
+
+5. Install the necessary dependencies:
 
     ```bash
     npm install
@@ -87,7 +138,7 @@ To run the application locally, use the following command:
 ```bash
 npm run dev
 ```
-This will start the application on http://localhost:5173.
+
 ## Usage
 
 Once the application is running, you can:
